@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  // tslint:disable-next-line: component-selector
+  selector: 'event-app',
+  template: `<h1>Helllo there</h1>
+  <img src='../assets/images/ng-nl.png'/>`,
+
 })
-export class AppComponent {
+export class EventsAppComponent {
   title = 'ng-fundamentals';
 }
