@@ -3,8 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   // tslint:disable-next-line: component-selector
   selector: 'event-app',
-  template: `<h1>Helllo there</h1>
-  <img src='../assets/images/ng-nl.png'/>`,
+  template: `<events-list></events-list>`,
 
 })
 export class EventsAppComponent {
