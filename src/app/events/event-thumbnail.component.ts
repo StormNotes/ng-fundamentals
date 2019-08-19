@@ -5,12 +5,14 @@ import {Component, Input } from '@angular/core';
   selector: 'event-thumbnail',
   template: `
   <div class="well hoverwell thumbnail">
-  <div><h1>{{event.name}}</h1></div>
+  <h2>{{event.name}}</h2>
   <div>Date : {{event.date}}</div>
   <div>Time : {{event.time}}</div>
   <div>Price : \{{event.price | currency: 'USD'}}</div>
-    <span>Location: {{event.location.address}}</span>
-    <span class="pad-left">{{event.location.city}}, {{event.location.country}}</span><br>
+  <div>
+  <span>Location: {{event.location.address}}</span>
+  <span class="pad-left">{{event.location.city}}, {{event.location.country}}</span><br>
+  </div>
     <img src="{{event.imageUrl}}" alt="">
     </div>
   `,
@@ -22,8 +24,8 @@ import {Component, Input } from '@angular/core';
       padding: var(--padding)
 
     }
-    .well{
-      color: #bbb;
+    .well div{
+      color: red;
     }
     `
   ]
