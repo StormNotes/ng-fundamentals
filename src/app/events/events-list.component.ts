@@ -8,7 +8,7 @@ import {Component} from '@angular/core';
   <div>
       <h1>Upcoming Angular Events</h1><hr>
       <div class="row">
-        <div class="col-md-5" *ngFor="let event of events2" >
+        <div class="col-md-6" *ngFor="let event of events2" >
         <event-thumbnail   [event] = "event"></event-thumbnail>
         </div>
       </div>
