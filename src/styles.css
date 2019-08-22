@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url("../node_modules/ngf-bootstrap/dist/bootstrap.min.css") ;
+.hoverwell{
+
+  transition: 1.2s;
+}
+
 .hoverwell:hover {
-  background-color: #485563;
+  background-color: #5e6b795d;
   cursor: pointer;
 }
 
