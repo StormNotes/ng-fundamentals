@@ -6,12 +6,19 @@ import {Component} from '@angular/core';
   selector: 'events-list',
   template: `
   <div>
+<<<<<<< HEAD
       <h1>Upcoming Angular Events</h1><hr>
       <div class="row">
         <div class="col-md-4" *ngFor="let event of events2" >
         <event-thumbnail   [event] = "event"></event-thumbnail>
         </div>
       </div>
+=======
+      <h1>Upcoming Angular Events</h1>
+      <hr>
+      <event-thumbnail  [event] = "event1"></event-thumbnail>
+
+>>>>>>> master
   </div>
 `
 })

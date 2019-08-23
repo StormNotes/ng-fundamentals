@@ -5,6 +5,7 @@ import {Component, Input } from '@angular/core';
   selector: 'event-thumbnail',
   template: `
   <div class="well hoverwell thumbnail">
+<<<<<<< HEAD
     <h2>{{event?.name}}</h2>
     <div>Date : {{event?.date}}</div>
     <div [ngClass]='changeTime(event.time)' [ngSwitch]='event?.time'>Time : {{event?.time}}
@@ -17,6 +18,15 @@ import {Component, Input } from '@angular/core';
     <div *ngIf ='event?.location'>
     <span>Location: {{event?.location?.address}}</span>
     <span class="pad-left">{{event?.location?.city}}, {{event?.location?.country}}</span><br>
+=======
+  <div><h1>{{event.name}}</h1></div>
+  <div>Date : {{event.date}}</div>
+  <div>Time : {{event.time}}</div>
+  <div>Price : \{{event.price | currency: 'USD'}}</div>
+    <span>Location: {{event.location.address}}</span>
+    <span class="pad-left">{{event.location.city}}, {{event.location.country}}</span><br>
+    <img src="{{event.imageUrl}}" alt="">
+>>>>>>> master
     </div>
   </div>
   `,
@@ -32,7 +42,11 @@ import {Component, Input } from '@angular/core';
       padding: var(--padding)
 
     }
+<<<<<<< HEAD
     .well div{
+=======
+    .well{
+>>>>>>> master
       color: #bbb;
     }
     `
